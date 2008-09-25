@@ -1,0 +1,106 @@
+# Translation of simpleTask to Catalan
+# Víctor Fernández de Alba <victor.fernandez@upcnet.es>, 2007
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleTask\n"
+"POT-Creation-Date: 2008-02-03 14:02+0000\n"
+"PO-Revision-Date: 2008-02-03 01:40+0100\n"
+"Last-Translator: Víctor Fernández de Alba <victor.fernandez@upcnet.es>\n"
+"Language-Team: UPCnet Plone Team <plone.team@upcnet.es>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: ca\n"
+"Language-Name: Catalan\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: simpleTask\n"
+"X-Is-Fallback-For: ca-ad ca-es ca-fr ca-it\n"
+
+# simpleTask_view.pt
+msgid "startby"
+msgstr "Començament"
+
+# simpleTask_view.pt
+msgid "endby"
+msgstr "Fi"
+
+# simpleTask_view.pt
+msgid "taskOwner"
+msgstr "Assignada a"
+
+# simpleTask_view.pt
+msgid "taskPriority"
+msgstr "Prioritat"
+
+# simpleTask_view.pt
+msgid "percentCompleted"
+msgstr "% Completat"
+
+# simpleTask_view.pt
+msgid "simpleTask_label_startby"
+msgstr "Començament"
+
+# simpleTask_view.pt
+msgid "simpleTask_label_endby"
+msgstr "Fi"
+
+# simpleTask_view.pt
+msgid "simpleTask_label_taskOwner"
+msgstr "Assignada a"
+
+# simpleTask_view.pt
+msgid "simpleTask_label_priority"
+msgstr "Prioritat"
+
+# simpleTask_view.pt
+msgid "simpleTask_label_percentCompleted"
+msgstr "% Completat"
+
+# simpleTask_view.pt
+msgid "high"
+msgstr "alta"
+
+# simpleTask_view.pt
+msgid "medium"
+msgstr "mitja"
+
+# simpleTask_view.pt
+msgid "low"
+msgstr "baixa"
+
+# simpleTask_view.pt
+msgid "Tasks"
+msgstr "Tasques"
+
+# simpleTask_view.pt
+msgid "MyTasks"
+msgstr "Les meves tasques"
+
+# portlet
+msgid "Totes_les_meves_tasques"
+msgstr "Les meves tasques&hellip;"
+
+# vista mytasks
+msgid "getTaskOwner"
+msgstr "Assignada a"
+
+# vista mytasks
+msgid "getEndby"
+msgstr "Data de finalització de la tasca"
+
+# vista mytasks
+msgid "getStartby"
+msgstr "Data de començament de la tasca"
+
+# vista mytasks
+msgid "getStartby"
+msgstr "% Completat"
+
+# vista mytasks
+msgid "Title"
+msgstr "Tasca"
+
+# vista mytasks
+msgid "Creator"
+msgstr "Creador"

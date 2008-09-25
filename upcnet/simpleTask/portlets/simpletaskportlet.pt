@@ -1,0 +1,68 @@
+<dl class="portlet portletsimpleTaskPortlet"
+    tal:define="tasks view/mytasks;
+                toLocalizedTime nocall:context/@@plone/toLocalizedTime"
+    i18n:domain="simpleTask">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span i18n:translate="Tasks">
+           Tasks
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+<!--    <dd class="portletItem odd">-->
+<!--        <a i18n:translate="mytasks" tal:attributes="href python:'/mytasks'">My active tasks</a>-->
+<!--    </dd>-->
+
+<tal:tasks tal:repeat="task tasks">
+    <dd class="portletItem"
+        tal:define="oddrow repeat/task/odd;
+                    plone_view context/@@plone;
+                    getIcon nocall:plone_view/getIcon;
+                    item_icon python:getIcon(task);"
+        tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+
+       <a href="#"
+           class="tile"
+           tal:define="isduecolor python:view.test(view.isDue(task.getEndby),'color:red;;','')"
+           tal:attributes="href task/getURL;
+                           title task/Description;                            
+                           style isduecolor">
+            <img tal:replace="structure item_icon/html_tag" />
+            <span tal:replace="task/pretty_title_or_id">
+             Some Event 
+            </span>
+            <span class="portletItemDetails"
+                  tal:attributes="style isduecolor"><!--
+                <tal:condition condition="task/getEndby">
+                    <tal:endby content="task/getEndby">Endby</tal:endby>, <br />
+                </tal:condition>
+                --><tal:date tal:content="python:toLocalizedTime(task.getEndby)">
+                May 5
+                </tal:date>
+            </span>
+        </a>
+        
+    </dd>
+    
+      <dd class="discreet"
+               tal:condition="not: tasks"
+               i18n:translate="description_no_items_in_folder">
+                There are currently no items in this folder.
+      </dd>
+    
+</tal:tasks>
+
+    <dd class="portletFooter">
+        <span class="portletBotomLeft"></span>
+         <a href=""
+           class="tile"
+           tal:attributes="href view/all_my_tasks_link"
+           i18n:translate="Totes_les_meves_tasques">
+                All my tasks&hellip;
+         </a>
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>

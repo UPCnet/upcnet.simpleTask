@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="upcnet.simpleTask">
+
+    <!-- configure your content components here -->
+
+    <class class=".simpletask.simpleTask">
+        <require
+            permission="zope2.View"
+            interface=".interfaces.IsimpleTask"
+            />
+        <require
+            permission="cmf.ModifyPortalContent"
+            set_schema=".interfaces.IsimpleTask"
+            />
+    </class>
+    
+    <!-- -*- extra stuff goes here -*- -->
+
+</configure>

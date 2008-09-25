@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="upcnet.simpleTask">
+
+    <include package="plone.app.contentmenu" />
+
+    <browser:page
+        for="upcnet.simpleTask.content.interfaces.IsimpleTask"
+        class=".simpletask.SimpleTaskView"
+        name="view"
+        permission="zope2.View"
+     />
+     
+    <browser:page
+        for="Products.CMFCore.interfaces.ISiteRoot"
+        class=".views.myTasksView"
+        name="lesmevestasques"
+        template="mytasks.pt"
+        permission="zope2.View"
+     />
+
+    <browser:resource
+        name="simpleTask.png"
+        file="simpleTask.png"
+        />
+
+</configure>

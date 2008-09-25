@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+  <index name="getTaskOwner" 
+         meta_type="FieldIndex">
+         <indexed_attr value="getTaskOwner"/>
+  </index>
+  <column value="getTaskOwner"/>
+<!-- ##code-section FOOT -->
+ <index name="getStartby" meta_type="DateIndex">
+  <property name="index_naive_time_as_local">True</property>
+           <indexed_attr value="getStartby"/>
+ </index>
+   <column value="getStartby"/>
+ <index name="getEndby" meta_type="DateIndex">
+  <property name="index_naive_time_as_local">True</property>
+           <indexed_attr value="getEndby"/>
+ </index>
+   <column value="getEndby"/>
+ <index name="getPercentCompleted" meta_type="FieldIndex">
+           <indexed_attr value="getPercentCompleted"/>
+ </index>
+   <column value="getPercentCompleted"/>   
+<!-- ##/code-section FOOT -->
+</object>

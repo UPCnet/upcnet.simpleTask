@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="simpleTask">
+
+  <head>
+      <metal:block fill-slot="top_slot">
+        <tal:insert tal:replace="nothing"
+              tal:define="dummy python:request.set('disable_border', 1)" />
+      </metal:block>
+  </head>
+
+<body>
+
+<div metal:fill-slot="main">
+<metal:main_macro define-macro="main">
+    <metal:body define-macro="body_macro"
+                tal:define="kssClassesView context/@@kss_field_decorator_view;
+                            getKssClasses nocall:kssClassesView/getKssClassesInlineEditable;
+                            templateId template/getId">
+
+      <h1 class="documentFirstHeading">
+        <span i18n:translate="MyTasks">My Tasks</span>
+      </h1>
+
+<tal:byState define="states view/statesAvaliable" repeat="state states">
+        <h3>
+         <span i18n:domain="plone" i18n:attributes="state" i18n:translate="" tal:content="state">
+            In progress
+         </span>
+        </h3>
+        
+        <metal:listingmacro define-macro="listing">
+        <tal:topiccontents define="topicContents python:view.tasksByState(state);">
+
+            <tal:listing condition="topicContents">
+       
+<!-- 
+            <tal:default condition="not:here/getCustomView|nothing"
+                         define="folderContents topicContents">
+                <metal:listing metal:use-macro="here/folder_listing/macros/listing">
+                    <metal:empty metal:fill-slot="no_items_in_listing"></metal:empty>
+                </metal:listing>
+
+            </tal:default>
+-->
+                <table class="listing"
+                       summary="Content listing"
+                       cellpadding="0" cellspacing="0" width="100%"
+                       i18n:attributes="summary summary_content_listing;">
+                     <thead>
+                        <tr>
+                            <th tal:repeat="field view/getViewFields"
+                                tal:content="field"
+                                i18n:translate=""/>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tal:brain tal:repeat="obj topicContents">
+                        <tr tal:define="oddrow repeat/obj/odd;"
+                            tal:attributes="class python:view.test(oddrow, 'even', 'odd');
+                                            style python:view.test(view.isDue(obj.getEndby),'color:red;;','')">
+                            <tal:fields repeat="field view/getViewFields"
+                                        define="url obj/getURL;                                                
+                                                obj_type obj/portal_type;
+                                                obj_typeinfo python: here.portal_types.getTypeInfo(obj_type);
+                                                icon python:portal_url+'/'+ obj_typeinfo.getIcon();
+                                                obj_wf_state obj/review_state|python: wtool.getInfoFor(obj, 'review_state', '');
+                                                obj_wf_state_class python:'state-' + normalizeString(obj_wf_state);
+                                                title_or_id obj/pretty_title_or_id">
+                            <tal:block define="value python: getattr(obj, field, None)">
+                                <td tal:condition="python: field != 'Title'"
+                                    tal:content="python:here.formatCatalogMetadata(value)"
+                                    i18n:translate=""/>
+                                <td tal:condition="python: field == 'Title'">
+                                    <a href="#" tal:attributes="href url">
+                                        <img src="#"
+                                             height="16"
+                                             width="16"
+                                             tal:attributes="src icon;
+                                                             alt obj/Type|obj_type"/>
+                                    </a>
+
+                                    <a href="#" tal:condition="python: obj.portal_type not in ['Link', 'Image']"
+                                                tal:attributes="href url;
+                                                                class obj_wf_state_class;
+                                                                style python:view.test(view.isDue(obj.getEndby),'color:red;;','')"
+                                                tal:content="title_or_id" />
+
+                                    <a href="#" tal:condition="python: obj.portal_type == 'Image'"
+                                                tal:attributes="href string:${url}/view;
+                                                                class obj_wf_state_class"
+                                                tal:content="title_or_id" />
+
+                                    <a href="#"
+                                       tal:condition="python: obj.portal_type == 'Link'"
+                                       tal:attributes="href obj/getRemoteUrl;
+                                                       class obj_wf_state_class"
+                                       class="link-plain"
+                                       tal:content="title_or_id" />
+                                </td>
+                            </tal:block>
+                            </tal:fields>
+                        </tr>
+                        </tal:brain>
+                     </tbody>
+                </table>
+
+            </tal:listing>
+
+            <p class="discreet"
+               tal:condition="python: not topicContents"
+               i18n:domain="atcontenttypes"
+               i18n:translate="description_no_items_in_topic">
+                There are currently no results for this search.
+            </p>
+
+            <!-- Navigation -->
+<!--            <div metal:use-macro="here/batch_macros/macros/navigation" />-->
+
+        </tal:topiccontents>
+        </metal:listingmacro>
+
+</tal:byState>
+    </metal:body>
+
+</metal:main_macro>
+
+</div>
+
+</body>
+</html>
