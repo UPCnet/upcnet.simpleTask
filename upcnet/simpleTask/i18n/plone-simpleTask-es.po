@@ -1,36 +1,35 @@
-# Translation of simpleTask to Catalan
+# Translation of simpleTask to Spanish
 # Víctor Fernández de Alba <victor.fernandez@upcnet.es>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: simpleTask\n"
 "POT-Creation-Date: 2008-02-03 14:02+0000\n"
-"PO-Revision-Date: 2008-02-03 01:40+0100\n"
-"Last-Translator: Víctor Fernández de Alba <victor.fernandez@upcnet.es>\n"
+"PO-Revision-Date: 2008-12-18 10:52+0100\n"
+"Last-Translator: Pilar Marinas Luis <pilar.marinas@upcnet.es>\n"
 "Language-Team: UPCnet Plone Team <plone.team@upcnet.es>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: ca\n"
-"Language-Name: Catalan\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: plone\n"
-"X-Is-Fallback-For: ca-ad ca-es ca-fr ca-it\n"
 
 # simpleTask.py
 msgid "simpleTask"
-msgstr "Tasca"
+msgstr "Tarea"
 
 msgid "A very simple task type."
-msgstr "Un document del tipus tasca."
+msgstr "Un documento del tipo tarea."
 
 # portlet
 msgid "Tasks portlet"
-msgstr "Llista de tasques"
+msgstr "Lista de tareas"
 
 # simpleTask.py
 msgid "inprogress"
-msgstr "En curs"
+msgstr "En curso"
 
 msgid "review"
 msgstr "Revisa"
@@ -42,23 +41,24 @@ msgid "complete"
 msgstr "Completa"
 
 msgid "draft"
-msgstr "Esborrany"
+msgstr "Borrador"
 
 msgid "assign"
-msgstr "Assigna"
+msgstr "Asigna"
 
 # vista mytasks
 msgid "getTaskOwner"
-msgstr "Tasques: Assignada a"
+msgstr "Tareas: Asignada a"
 
 # vista mytasks
 msgid "getEndby"
-msgstr "Tasques: Data de finalització"
+msgstr "Tareas: Fecha de finalización"
 
 # vista mytasks
 msgid "getStartby"
-msgstr "Tasques: Data de començament"
+msgstr "Tareas: Fecha de inicio"
 
 # vista mytasks
 msgid "getPercentCompleted"
-msgstr "Tasques: % completat"
+msgstr "Tareas: % completadas"
+

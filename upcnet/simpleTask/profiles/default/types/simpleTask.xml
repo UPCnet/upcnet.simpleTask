@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <object name="simpleTask"
         meta_type="Factory-based Type Information with dynamic views"
-        xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-   
- <property name="title">simpleTask</property>
- <property name="description"></property>
+        i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">   
+ <property name="title" i18n:translate="">simpleTask</property>
+ <property name="description" i18n:translate="">A very simple task type.</property>
  <property name="content_icon">++resource++simpleTask.png</property>
  <property name="content_meta_type">simpleTask</property>
  <property name="product">upcnet.simpleTask</property>
