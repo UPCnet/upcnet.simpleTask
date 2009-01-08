@@ -14,9 +14,9 @@
     <!-- Register the installation GenericSetup extension profile -->
     <genericsetup:registerProfile
       name="default"
-      title="simpleTask content type"
+      title="simpleTask"
       directory="profiles/default"
-      description=""
+      description="A very simple task content type"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
