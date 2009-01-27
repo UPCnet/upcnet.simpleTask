@@ -4,7 +4,7 @@
         i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">   
  <property name="title" i18n:translate="">simpleTask</property>
  <property name="description" i18n:translate="">A very simple task type.</property>
- <property name="content_icon">++resource++simpleTask.png</property>
+ <property name="content_icon">simpleTask.png</property>
  <property name="content_meta_type">simpleTask</property>
  <property name="product">upcnet.simpleTask</property>
  <property name="factory">addsimpleTask</property>
