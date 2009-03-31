@@ -93,8 +93,12 @@ msgid "getStartby"
 msgstr "Fecha de inicio de la tarea"
 
 # vista mytasks
-msgid "getStartby"
-msgstr "% Completada"
+msgid "getPriority"
+msgstr "Prioridad"
+
+# vista mytasks
+msgid "getPercentCompleted"
+msgstr "% completado"
 
 # vista mytasks
 msgid "Title"

@@ -19,6 +19,10 @@
  <index name="getPercentCompleted" meta_type="FieldIndex">
            <indexed_attr value="getPercentCompleted"/>
  </index>
-   <column value="getPercentCompleted"/>   
+    <column value="getPercentCompleted"/>
+ <index name="getPriority" meta_type="FieldIndex">
+           <indexed_attr value="getPriority"/>
+ </index>
+    <column value="getPriority"/>       
 <!-- ##/code-section FOOT -->
 </object>

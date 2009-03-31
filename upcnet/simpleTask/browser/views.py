@@ -27,7 +27,7 @@ class myTasksView(BrowserView):
                        sort_on='getEndby')
 
     def getViewFields(self):
-        return (_(u'Title'), _(u'Creator'), _(u'getStartby'), _(u'getEndby'),  _(u'getTaskOwner'))
+        return (_(u'Title'), _(u'Creator'),_(u'getPriority'), _(u'getPercentCompleted'),_(u'getStartby'), _(u'getEndby'))
 
     def test(self, value, trueVal, falseVal):
         """

@@ -94,8 +94,12 @@ msgid "getStartby"
 msgstr "Data de començament de la tasca"
 
 # vista mytasks
-msgid "getStartby"
-msgstr "% Completat"
+msgid "getPriority"
+msgstr "Prioritat"
+
+# vista mytasks
+msgid "getPercentCompleted"
+msgstr "% completat"
 
 # vista mytasks
 msgid "Title"
