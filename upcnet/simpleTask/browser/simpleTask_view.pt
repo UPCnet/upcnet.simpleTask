@@ -78,12 +78,9 @@
                 <tr>
                     <th i18n:translate="taskPriority">Priority</th>
                     <td class="summary">
-                    <!--
-				        <metal:field use-macro="python:here.widget('priority', mode='view')">
+                        <metal:field use-macro="python:here.widget('priority', mode='view')">
 				        Priority
 				        </metal:field>
-                    -->
-                    <span tal:content="here/priority"></span>
                     </td>
                 </tr>
                 <tr>
