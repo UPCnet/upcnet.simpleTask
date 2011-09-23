@@ -6,15 +6,15 @@ from DateTime import DateTime
 
 from zope.i18nmessageid import MessageFactory
 from Products.CMFPlone import PloneMessageFactory as PMF
-_ = MessageFactory('simpleTask')
+_ = MessageFactory('upcnet.simpleTask')
+
 
 class myTasksView(BrowserView):
-    
     template = ViewPageTemplateFile('mytasks.pt')
 
     def statesAvaliable(self):
-        return ('inprogress','draft','completed')
-    
+        return ('inprogress', 'draft', 'completed')
+
     def tasksByState(self, state):
         context = aq_inner(self.context)
         catalog = getToolByName(context, 'portal_catalog')
@@ -27,7 +27,7 @@ class myTasksView(BrowserView):
                        sort_on='getEndby')
 
     def getViewFields(self):
-        return (_(u'Title'), _(u'Creator'),_(u'getPriority'), _(u'getPercentCompleted'),_(u'getStartby'), _(u'getEndby'), _(u'getTaskOwner'))
+        return (_(u'Title'), _(u'Creator'), _(u'getPriority'), _(u'getPercentCompleted'), _(u'getStartby'), _(u'getEndby'), _(u'getTaskOwner'))
 
     def test(self, value, trueVal, falseVal):
         """

@@ -3,8 +3,9 @@ Changelog
 
 1.1 -
 -----
-
 * Fixed: crash when viewing a simpleTask without body text, missing define is_editable.
+* Renamed translation domain from simpleTask to upcnet.simpleTask
+* Translations moved to locales folder
 
 1.0 - Unreleased
 ----------------
