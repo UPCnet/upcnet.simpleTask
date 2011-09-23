@@ -2,6 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="upcnet.simpleTask">
 
     <five:registerPackage package="." initialize=".initialize" />
@@ -21,5 +22,5 @@
       />
 
     <!-- -*- extra stuff goes here -*- -->
-
+    <i18n:registerTranslations directory="locales" />        
 </configure>

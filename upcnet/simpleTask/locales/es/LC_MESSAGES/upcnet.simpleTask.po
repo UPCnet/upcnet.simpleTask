@@ -1,106 +1,110 @@
-# Translation of simpleTask to English
+# Translation of simpleTask to Spanish
 # Víctor Fernández de Alba <victor.fernandez@upcnet.es>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: simpleTask\n"
 "POT-Creation-Date: 2008-02-03 14:02+0000\n"
-"PO-Revision-Date: 2008-12-18 10:35+0100\n"
+"PO-Revision-Date: 2008-12-18 10:24+0100\n"
 "Last-Translator: Pilar Marinas Luis <pilar.marinas@upcnet.es>\n"
 "Language-Team: UPCnet Plone Team <plone.team@upcnet.es>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
 "Preferred-Encodings: utf-8\n"
-"Domain: simpleTask\n"
+"Domain: upcnet.simpleTask\n"
 
 # simpleTask_view.pt
 msgid "startby"
-msgstr "Start"
+msgstr "Inicio"
 
 # simpleTask_view.pt
 msgid "endby"
-msgstr "End"
+msgstr "Fin"
 
 # simpleTask_view.pt
 msgid "taskOwner"
-msgstr "Assigned to"
+msgstr "Asignada a"
 
 # simpleTask_view.pt
 msgid "taskPriority"
-msgstr "Priority"
+msgstr "Prioridad"
 
 # simpleTask_view.pt
 msgid "percentCompleted"
-msgstr "% Completed"
+msgstr "% Completado"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_startby"
-msgstr "Start"
+msgstr "Inicio"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_endby"
-msgstr "End"
+msgstr "Fin"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_taskOwner"
-msgstr "Assigned to"
+msgstr "Asignada a"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_priority"
-msgstr "Priority"
+msgstr "Prioridad"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_percentCompleted"
-msgstr "% Completed"
+msgstr "% Completado"
 
 # simpleTask_view.pt
 msgid "high"
-msgstr "high"
+msgstr "alta"
 
 # simpleTask_view.pt
 msgid "medium"
-msgstr "medium"
+msgstr "media"
 
 # simpleTask_view.pt
 msgid "low"
-msgstr "low"
+msgstr "baja"
 
 # simpleTask_view.pt
 msgid "Tasks"
-msgstr "Tasks"
+msgstr "Tareas"
 
 # simpleTask_view.pt
 msgid "MyTasks"
-msgstr "My Tasks"
+msgstr "Mis tareas"
 
 # portlet
 msgid "Totes_les_meves_tasques"
-msgstr "My Tasks&hellip;"
+msgstr "Mis tareas&hellip;"
 
 # vista mytasks
 msgid "getTaskOwner"
-msgstr "Assigned to"
+msgstr "Asignada a"
 
 # vista mytasks
 msgid "getEndby"
-msgstr "End date of the task"
+msgstr "Fecha de finalización de la tarea"
 
 # vista mytasks
 msgid "getStartby"
-msgstr "Start date of the task"
+msgstr "Fecha de inicio de la tarea"
 
 # vista mytasks
-msgid "getStartby"
-msgstr "% Completed"
+msgid "getPriority"
+msgstr "Prioridad"
+
+# vista mytasks
+msgid "getPercentCompleted"
+msgstr "% completado"
 
 # vista mytasks
 msgid "Title"
-msgstr "Task"
+msgstr "Tarea"
 
 # vista mytasks
 msgid "Creator"
-msgstr "Creator"
+msgstr "Creador"
 

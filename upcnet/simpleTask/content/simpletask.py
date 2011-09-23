@@ -36,7 +36,7 @@ schema = Schema((
         widget=DateTimeField._properties['widget'](
             label='Startby',
             label_msgid='simpleTask_label_startby',
-            i18n_domain='simpleTask',
+            i18n_domain='upcnet.simpleTask',
         ),
     ),
     DateTimeField(
@@ -48,7 +48,7 @@ schema = Schema((
         widget=DateTimeField._properties['widget'](
             label='Endby',
             label_msgid='simpleTask_label_endby',
-            i18n_domain='simpleTask',
+            i18n_domain='upcnet.simpleTask',
         ),
     ),
     StringField(
@@ -56,7 +56,7 @@ schema = Schema((
         widget=SelectionWidget(
             label='Priority',
             label_msgid='simpleTask_label_priority',
-            i18n_domain='simpleTask',
+            i18n_domain='upcnet.simpleTask',
         ),
         default="medium",
         vocabulary=["high","medium","low"],
@@ -66,7 +66,7 @@ schema = Schema((
         widget=IntegerField._properties['widget'](
             label='Percentcompleted',
             label_msgid='simpleTask_label_percentCompleted',
-            i18n_domain='simpleTask',
+            i18n_domain='upcnet.simpleTask',
         ),
         default=0,
     ),
@@ -75,7 +75,7 @@ schema = Schema((
         widget=StringField._properties['widget'](
             label='Taskowner',
             label_msgid='simpleTask_label_taskOwner',
-            i18n_domain='simpleTask',
+            i18n_domain='upcnet.simpleTask',
         ),
         default_method='getUserAuth',
     ),

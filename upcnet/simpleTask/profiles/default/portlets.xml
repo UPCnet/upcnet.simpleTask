@@ -6,7 +6,7 @@
 <portlets>
  <portlet
    addview="simpleTask.simpleTaskPortlet"
-   title="Tasks portlet"
+   title="Tasks portlet"   
    description=""
    />
 </portlets>

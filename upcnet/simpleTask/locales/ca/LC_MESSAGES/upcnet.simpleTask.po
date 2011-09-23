@@ -1,60 +1,61 @@
-# Translation of simpleTask to Spanish
+# Translation of simpleTask to Catalan
 # Víctor Fernández de Alba <victor.fernandez@upcnet.es>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: simpleTask\n"
 "POT-Creation-Date: 2008-02-03 14:02+0000\n"
-"PO-Revision-Date: 2008-12-18 10:24+0100\n"
-"Last-Translator: Pilar Marinas Luis <pilar.marinas@upcnet.es>\n"
+"PO-Revision-Date: 2008-02-03 01:40+0100\n"
+"Last-Translator: Víctor Fernández de Alba <victor.fernandez@upcnet.es>\n"
 "Language-Team: UPCnet Plone Team <plone.team@upcnet.es>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: es\n"
-"Language-Name: Spanish\n"
+"Language-Code: ca\n"
+"Language-Name: Catalan\n"
 "Preferred-Encodings: utf-8\n"
-"Domain: simpleTask\n"
+"Domain: upcnet.simpleTask\n"
+"X-Is-Fallback-For: ca-ad ca-es ca-fr ca-it\n"
 
 # simpleTask_view.pt
 msgid "startby"
-msgstr "Inicio"
+msgstr "Començament"
 
 # simpleTask_view.pt
 msgid "endby"
-msgstr "Fin"
+msgstr "Fi"
 
 # simpleTask_view.pt
 msgid "taskOwner"
-msgstr "Asignada a"
+msgstr "Assignada a"
 
 # simpleTask_view.pt
 msgid "taskPriority"
-msgstr "Prioridad"
+msgstr "Prioritat"
 
 # simpleTask_view.pt
 msgid "percentCompleted"
-msgstr "% Completado"
+msgstr "% Completat"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_startby"
-msgstr "Inicio"
+msgstr "Començament"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_endby"
-msgstr "Fin"
+msgstr "Fi"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_taskOwner"
-msgstr "Asignada a"
+msgstr "Assignada a"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_priority"
-msgstr "Prioridad"
+msgstr "Prioritat"
 
 # simpleTask_view.pt
 msgid "simpleTask_label_percentCompleted"
-msgstr "% Completado"
+msgstr "% Completat"
 
 # simpleTask_view.pt
 msgid "high"
@@ -62,49 +63,51 @@ msgstr "alta"
 
 # simpleTask_view.pt
 msgid "medium"
-msgstr "media"
+msgstr "mitja"
 
 # simpleTask_view.pt
 msgid "low"
-msgstr "baja"
+msgstr "baixa"
 
 # simpleTask_view.pt
 msgid "Tasks"
-msgstr "Tareas"
+msgstr "Tasques"
 
 # simpleTask_view.pt
 msgid "MyTasks"
-msgstr "Mis tareas"
+msgstr "Les meves tasques"
 
 # portlet
 msgid "Totes_les_meves_tasques"
-msgstr "Mis tareas&hellip;"
+msgstr "Les meves tasques&hellip;"
 
 # vista mytasks
 msgid "getTaskOwner"
-msgstr "Asignada a"
+msgstr "Assignada a"
 
 # vista mytasks
 msgid "getEndby"
-msgstr "Fecha de finalización de la tarea"
+msgstr "Data de finalització de la tasca"
 
 # vista mytasks
 msgid "getStartby"
-msgstr "Fecha de inicio de la tarea"
+msgstr "Data de començament de la tasca"
 
 # vista mytasks
 msgid "getPriority"
-msgstr "Prioridad"
+msgstr "Prioritat"
 
 # vista mytasks
 msgid "getPercentCompleted"
-msgstr "% completado"
+msgstr "% completat"
 
 # vista mytasks
 msgid "Title"
-msgstr "Tarea"
+msgstr "Tasca"
 
 # vista mytasks
 msgid "Creator"
 msgstr "Creador"
 
+msgid "no_body_text"
+msgstr "Aquest element no conté cap text principal. Feu clic a la pestanya edita per a introduir-lo."
