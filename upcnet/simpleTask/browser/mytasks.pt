@@ -61,10 +61,11 @@
                             tal:attributes="class python:view.test(oddrow, 'even', 'odd');
                                             style python:view.test(view.isDue(obj.getEndby),'color:red;;','')">
                             <tal:fields repeat="field view/getViewFields"
-                                        define="url obj/getURL;                                                
+                                        define="url obj/getURL;
+                                                normalizeString nocall:context/@@plone/normalizeString;
                                                 obj_type obj/portal_type;
                                                 obj_typeinfo python: here.portal_types.getTypeInfo(obj_type);
-                                                icon python:portal_url+'/'+ obj_typeinfo.getIcon();
+                                                icon python:portal_url+'/'+ obj.getIcon;
                                                 obj_wf_state obj/review_state|python: wtool.getInfoFor(obj, 'review_state', '');
                                                 obj_wf_state_class python:'state-' + normalizeString(obj_wf_state);
                                                 title_or_id obj/pretty_title_or_id">
