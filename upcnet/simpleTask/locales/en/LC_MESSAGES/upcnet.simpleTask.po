@@ -16,6 +16,14 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: upcnet.simpleTask\n"
 
+# simpleTask.py
+msgid "simpleTask"
+msgstr "Task"
+
+# portlet
+msgid "Tasks portlet"
+msgstr "Task List"
+
 # simpleTask_view.pt
 msgid "startby"
 msgstr "Start"

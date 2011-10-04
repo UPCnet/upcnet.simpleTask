@@ -17,6 +17,17 @@ msgstr ""
 "Domain: upcnet.simpleTask\n"
 "X-Is-Fallback-For: ca-ad ca-es ca-fr ca-it\n"
 
+
+# simpleTask.py
+msgid "simpleTask"
+msgstr "Tasca"
+
+msgid "A very simple task type."
+msgstr "Un document del tipus tasca."
+
+# portlet
+msgid "Tasks portlet"
+msgstr "Llista de tasques"
 # simpleTask_view.pt
 msgid "startby"
 msgstr "Començament"
