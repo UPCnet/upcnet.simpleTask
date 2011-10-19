@@ -1,0 +1,99 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-10-03 11:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: upcnet.simpleTask\n"
+
+#: ../../../profiles/default/types/simpleTask.xml
+msgid "A very simple task type."
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "Creator"
+msgstr ""
+
+#. Default: "My Tasks"
+#: ../../../browser/mytasks.pt:23
+msgid "MyTasks"
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "Title"
+msgstr ""
+
+#. Default: "End By"
+#: ../../../browser/simpleTask_view.pt:61
+msgid "endby"
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "getEndby"
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "getPercentCompleted"
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "getPriority"
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "getStartby"
+msgstr ""
+
+#: ../../../browser/views.py:30
+msgid "getTaskOwner"
+msgstr ""
+
+#. Default: "This item does not have any body text, click the edit tab to change it."
+#: ../../../browser/simpleTask_view.pt:37
+msgid "no_body_text"
+msgstr ""
+
+#: ../../../browser/simpleTask_view.pt:88
+msgid "percentCompleted"
+msgstr ""
+
+#: ../../../profiles/default/types/simpleTask.xml
+msgid "simpleTask"
+msgstr ""
+
+#. Default: "Start By"
+#: ../../../browser/simpleTask_view.pt:50
+msgid "startby"
+msgstr ""
+
+#. Default: "Content listing"
+#: ../../../browser/mytasks.pt:47
+msgid "summary_content_listing"
+msgstr ""
+
+#. Default: "Event details"
+#: ../../../browser/simpleTask_view.pt:44
+msgid "summary_event_details"
+msgstr ""
+
+#. Default: "Task Owner"
+#: ../../../browser/simpleTask_view.pt:72
+msgid "taskOwner"
+msgstr ""
+
+#. Default: "Priority"
+#: ../../../browser/simpleTask_view.pt:80
+msgid "taskPriority"
+msgstr ""
+
