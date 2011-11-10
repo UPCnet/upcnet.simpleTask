@@ -101,10 +101,6 @@
         <metal:field use-macro="python:here.widget('text', mode='view')">
         Body text
         </metal:field>
-
-        <div metal:use-macro="here/document_relateditems/macros/relatedItems">
-            show related items if they exist
-        </div>
     
         <div tal:replace="structure provider:plone.belowcontentbody" />
 
