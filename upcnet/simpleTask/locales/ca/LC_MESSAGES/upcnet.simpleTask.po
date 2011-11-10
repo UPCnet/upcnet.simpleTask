@@ -30,7 +30,7 @@ msgstr "Llista de tasques"
 
 # simpleTask_view.pt
 msgid "startby"
-msgstr "Començament"
+msgstr "Inici"
 
 # simpleTask_view.pt
 msgid "endby"

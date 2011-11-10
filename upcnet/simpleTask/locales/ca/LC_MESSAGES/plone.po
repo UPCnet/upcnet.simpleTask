@@ -57,7 +57,7 @@ msgstr "Tasques: Data de finalització"
 
 # vista mytasks
 msgid "getStartby"
-msgstr "Tasques: Data de començament"
+msgstr "Tasques: Data d'inici"
 
 # vista mytasks
 msgid "getPercentCompleted"
