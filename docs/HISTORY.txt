@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2 (unreleased)
+----------------
+* ZCML cleansing
+
 1.1 (2011-11-25)
 ----------------
 * Fixed: crash when viewing a simpleTask without body text, missing define is_editable.
