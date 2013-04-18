@@ -137,5 +137,5 @@ msgstr "Llistat de contingut"
 #. Default: "Event details"
 #: ../../../browser/simpleTask_view.pt:44
 msgid "summary_event_details"
-msgstr "Detalls de l'event"
+msgstr "Detalls de l'esdeveniment"
 
